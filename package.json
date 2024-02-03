@@ -12,7 +12,8 @@
     "triggerAllTests-dashboard": "npx cypress run --record --key 89dbd119-066c-4714-a021-1b4e36c1fe96",
     "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/e2e/webdriver-uni/*",
     "triggerAllTests-automationteststore": "npx cypress run --spec cypress/e2e/automation-test-store/*",
-    "triggerAllTests-dashboard-automationteststore":"npx cypress run --spec cypress/e2e/automation-test-store/* --record --key 89dbd119-066c-4714-a021-1b4e36c1fe96",
+    "triggerAllTests-dashboard-automationteststore": "npx cypress run --spec cypress/e2e/automation-test-store/* --record --key 89dbd119-066c-4714-a021-1b4e36c1fe96",
+    "triggerAllTests-cucumberTests": "npx cypress run --spec cypress/e2e/webdriver-uni/features/*.feature --browser chrome",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
     "delete-results": "rm -rf cypress/results/* || true",
@@ -27,10 +28,15 @@
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
     "cypress": "^13.6.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-multi-reporters": "^1.6.4",
     "mocha-junit-reporter": "^2.2.1",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions",
   }
 }
