@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Test Iframe and Modal", () => {
   it("Handling Iframes and Modals", () => {
     cy.visit("/");

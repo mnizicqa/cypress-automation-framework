@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Validate website navigation links", () => {
   it("Confirm links redirect to correct pages", () => {
     cy.visit("/");

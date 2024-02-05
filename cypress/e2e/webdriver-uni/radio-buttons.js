@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Verify radio buttons", () => {
   beforeEach(() => {
     cy.visit("/");

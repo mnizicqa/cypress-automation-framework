@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Verify checkboxes", () => {
   beforeEach(() => {
     cy.navigateToCheckboxespage();

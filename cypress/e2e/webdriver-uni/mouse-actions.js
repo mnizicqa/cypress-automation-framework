@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Test mouse actions", () => {
   beforeEach(() => {
     cy.visit("/");

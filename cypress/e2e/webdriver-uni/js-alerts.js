@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Handling js alerts", () => {
   beforeEach(() => {
     cy.visit("/");

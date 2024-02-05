@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Iterate over elements", () => {
   beforeEach(() => {
     cy.visit("https://www.automationteststore.com/");

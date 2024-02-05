@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Test Datepicker", () => {
   beforeEach(() => {
     cy.navigateToDatePickerPage();

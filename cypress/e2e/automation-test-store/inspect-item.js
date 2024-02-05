@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Inspect Automation Store Items", () => {
   beforeEach(function () {
     cy.visit("https://www.automationteststore.com/");

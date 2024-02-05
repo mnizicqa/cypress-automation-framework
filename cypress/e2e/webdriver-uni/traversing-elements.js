@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 describe("Traversing DOM elements in Cypress", () => {
   beforeEach(() => {
     cy.visit("/");

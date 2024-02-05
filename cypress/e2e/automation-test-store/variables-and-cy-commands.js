@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Verifying variables, cypress commands and jquery commands", () => {
   it("Navigating to specific products", () => {
     //    The following will fail

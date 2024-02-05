@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("JSON Object", () => {
   it("Json Object Examples", () => {
     const exampleObject = {

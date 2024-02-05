@@ -1,5 +1,3 @@
-/// <reference types = "cypress"/>
-
 describe("Test File Upload", () => {
   it("Upload a file...", () => {
     cy.uploadFile("cypress/fixtures/laptop.png");
