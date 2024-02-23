@@ -30,7 +30,7 @@ describe("Test Contact Us form via WebDriverUni", () => {
     );
   });
 
-  it.only("Should not be able to submit a successful submission via contact us form as all field are required", () => {
+  it("Should not be able to submit a successful submission via contact us form as all field are required", () => {
     if (Cypress.isBrowser("!firefox")) {
       contactUsPage.checkPageTitleAndUrl();
       contactUsPage.contactUsFormSubmission(
