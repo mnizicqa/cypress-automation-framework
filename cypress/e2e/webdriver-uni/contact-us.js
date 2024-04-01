@@ -18,9 +18,9 @@ describe("Test Contact Us form via WebDriverUni", () => {
   });
 
   it("Should be able to submit a successful submission via contact us form", () => {
-    const contantUsPage = new ContactUs_PO();
-    contantUsPage.checkPageTitleAndUrl();
-    contantUsPage.contactUsFormSubmission(
+    const contactUsPage = new ContactUs_PO();
+    contactUsPage.checkPageTitleAndUrl();
+    contactUsPage.contactUsFormSubmission(
       Cypress.env("first_name"),
       data.last_name,
       data.email,
